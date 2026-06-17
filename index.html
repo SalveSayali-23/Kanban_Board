@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- <h1>kanban board</h1> -->
+    <header>
+      <h1>Simple Kanban Board</h1>
+      <button id="add-task-button">Add Task</button>
+    </header>
+    <main>
+      <!-- Color tooltip section for priority -->
+      <section class="tool-box">
+        <div style="background-color: lightpink"></div>
+        <div style="background-color: lightgreen"></div>
+        <div style="background-color: lightblue"></div>
+        <div style="background-color: black"></div>
+        <div style="background-color: lightsalmon">All</div>
+      </section>
+      <section class="task-board">
+        <article>
+          <h2>TODO</h2>
+          <div class="todo-tasks"></div>
+        </article>
+        <article>
+          <h2>IN PROGRESS</h2>
+          <div class="inprogress-tasks"></div>
+        </article>
+        <article>
+          <h2>DONE</h2>
+          <div class="done-tasks"></div>
+        </article>
+      </section>
+      <secttion class="modal-container">
+        <section class="add-task-modal">
+          <section class="add-task-modal-content">
+            <form action="">
+              <label for="task-desc">Task Description:</label>
+              <textarea name="" id="" placeholder="Task Description"></textarea>
+              <h5>Priority Colors</h5>
+              <!-- <label for="priority"> Priority </label> -->
+
+              <section class="priority-options">
+                <label>
+                  <input type="radio" value="pink" name="priority" />
+                  Pink P0
+                </label>
+
+                <label>
+                  <input type="radio" value="green" name="priority" />
+                  Green P1
+                </label>
+
+                <label>
+                  <input type="radio" value="blue" name="priority" />
+                  Blue P2
+                </label>
+
+                <label>
+                  <input type="radio" value="black" name="priority" />
+                  Black P3
+                </label>
+              </section>
+
+              <section class="form-actions">
+                <button type="submit">Create task</button>
+                <button type="button" id="close-modal-button">Cancel</button>
+              </section>
+            </form>
+          </section>
+        </section>
+      </secttion>
+    </main>
+    <footer></footer>
+    <script src="script.js"></script>
+  </body>
+</html>
