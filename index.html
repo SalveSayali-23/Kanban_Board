@@ -4,7 +4,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
-    <title>Document</title>
+    <title>Simple Kanban Board</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
   </head>
   <body>
     <!-- <h1>kanban board</h1> -->
@@ -15,11 +16,12 @@
     <main>
       <!-- Color tooltip section for priority -->
       <section class="tool-box">
-        <div style="background-color: lightpink"></div>
-        <div style="background-color: lightgreen"></div>
-        <div style="background-color: lightblue"></div>
-        <div style="background-color: black"></div>
-        <div style="background-color: lightsalmon">All</div>
+        <div class="swatch pink" data-priority="pink"></div>
+        <div class="swatch green" data-priority="green"></div>
+        <div class="swatch blue" data-priority="blue"></div>
+        <div class="swatch black" data-priority="black"></div>
+        <div class="swatch all" data-priority="all
+        ">All</div>
       </section>
       <section class="task-board">
         <article>
@@ -74,6 +76,13 @@
           </section>
         </section>
       </secttion>
+      <section class="edit-modal">
+        <section class="edit-modal-container">
+        <section class="edit-modal-container-content">
+          
+        </section>
+      </section>
+      </section>
     </main>
     <footer></footer>
     <script src="script.js"></script>
